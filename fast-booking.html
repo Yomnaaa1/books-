@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الحجز السريع - Booky</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <!--<div style="text-align:center; margin:10px;">
+      <button onclick="setLang('ar')">العربية</button>
+      <button onclick="setLang('en')">English</button>
+    </div>-->
+    <h1><span class="material-icons">bolt</span> الحجز السريع</h1>
+    <p>املا بياناتك واحجز كتابك في أقل من دقيقة</p>
+    <a href="index.html" class="cta-btn">
+      <span class="material-icons">arrow_back</span> رجوع للرئيسية
+    </a>
+  </header>
+  
+
+  <section class="form-section">
+    <form>
+      <label><span class="material-icons">menu_book</span> اسم الكتاب</label>
+      <input type="text" placeholder="ادخل اسم الكتاب" required>
+
+      <label><span class="material-icons">person</span> اسمك</label>
+      <input type="text" placeholder="اكتب اسمك" required>
+
+      <label><span class="material-icons">phone_android</span> رقم الهاتف</label>
+      <input type="tel" placeholder="010xxxxxxxx" required>
+
+      <button type="submit">
+        <span class="material-icons">check_circle</span> احجز الآن
+      </button>
+    </form>
+  </section>
+    <script src="script.js"></script>
+    <script src="lang.js"></script>
+
+
+</body>
+</html>
+

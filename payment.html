@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الدفع الآمن - Booky</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <!--<div style="text-align:center; margin:10px;">
+      <button onclick="setLang('ar')">العربية</button>
+      <button onclick="setLang('en')">English</button>
+    </div>-->
+    <h1 id="header-title"><span class="material-icons">lock</span> الدفع الآمن</h1>
+    <p id="header-desc">ادخل بيانات الدفع الخاصة بك لإتمام الحجز</p>
+    <a href="index.html" class="cta-btn">
+      <span class="material-icons">arrow_back</span> رجوع للرئيسية
+    </a>
+  </header>
+
+  <section class="form-section">
+    <form>
+      <label id="card-label"><span class="material-icons">credit_card</span> رقم البطاقة</label>
+      <input type="text" maxlength="16" placeholder="xxxx xxxx xxxx xxxx" required>
+
+      <label id="expiry-label"><span class="material-icons">event</span> تاريخ الانتهاء</label>
+      <input type="month" required>
+
+      <label id="expiry-label"><span class="material-icons">vpn_key</span> رمز CVV</label>
+      <input type="password" maxlength="3" placeholder="***" required>
+
+      <button type="submit"id="pay-btn">
+        <span class="material-icons">payment</span> ادفع الآن
+      </button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+  <script src="lang.js"></script>
+
+</body>
+</html>
+
